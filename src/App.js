@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
 
 function App() {
+  const [quote, setQuote] = useState("");
+
+  useEffect(() => {
+    fetch("https://api.kanye.rest/")
+      .then((response) => response.json())
+      .then((data) => setQuote(data.quote))
+      .catch((error) => console.error(error));
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>{quote}</p>
       </header>
+      <button onClick={() => window.location.reload()}>Get new quote</button>
     </div>
   );
 }
