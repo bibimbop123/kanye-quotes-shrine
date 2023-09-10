@@ -1,0 +1,48 @@
+.App {
+    @apply text-center bg-primary text-secondary p-4;
+    font-weight: 100;
+    font-size: 1.5em;
+  }
+  
+  .quote {
+    @apply text-lg font-light text-center;
+    color: #BEEF9E;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .video-container {
+    @apply relative w-full;
+  }
+  
+  .video-container video {
+    @apply absolute top-0 left-0 w-full h-full borderPulse;
+    background-color: #9BB1FF;
+  }
+  
+  .borderPulse {
+    animation: borderPulse 2s infinite alternate;
+  }
+  
+  @keyframes borderPulse {
+    0% {
+      border: 1px solid #788BFF;
+    }
+    100% {
+      border: 10px solid #E2FDFF;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .video-container video {
+      @apply w-full h-auto;
+    }
+  }
+  
+  @media only screen and (min-width: 769px) {
+    .video-container video {
+      @apply w-700 h-700;
+    }
+  }
