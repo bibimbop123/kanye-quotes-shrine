@@ -13,7 +13,7 @@
 }
 
 .video-container video {
-  @apply absolute top-0 left-0 w-full h-full borderPulse;
+  @apply w-full h-full borderPulse;
   background-color: #9BB1FF;
 }
 
@@ -47,6 +47,6 @@
 
 @media only screen and (min-width: 769px) {
   .video-container video {
-    @apply w-700 h-700;
+    @apply w-700 h-700 justify-center; 
   }
 }

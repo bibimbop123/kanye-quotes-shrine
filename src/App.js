@@ -23,7 +23,7 @@ function App() {
       <header className="text-center">
         <h1 className="text-4xl font-bold mb-4">Kanye Says</h1>
       </header>
-      <div className="video-container">
+      <div className="video-container justify-center flex mx-auto">
         <video src={Kobe} autoPlay controls />
       </div>
       <div className="text-center">
