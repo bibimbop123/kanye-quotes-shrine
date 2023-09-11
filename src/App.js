@@ -18,13 +18,15 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="justify-center w-full App">
       <br />
-      <header className="App-header">
+      <header className="text-center">
         <h1 className="text-4xl font-bold mb-4">Kanye Says</h1>
-        <div className="video-container">
-          <video src={Kobe} autoPlay controls />
-        </div>
+      </header>
+      <div className="video-container">
+        <video src={Kobe} autoPlay controls />
+      </div>
+      <div className="text-center">
         <h2 className="text-2xl font-bold mt-8">...and I quote:</h2>
         <h3 className="text-xl font-bold">👇</h3>
         <p className="quote">{quote}</p>
@@ -34,7 +36,7 @@ function App() {
         >
           Get new quote
         </button>
-      </header>
+      </div>
     </div>
   );
 }
