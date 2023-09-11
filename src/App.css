@@ -1,11 +1,11 @@
 .App {
   font-weight: 100;
   font-size: 1.5em;
+  background-color: #6200B3
 }
 
 .quote {
-  @apply text-lg font-light text-center;
-  color: red;
+  color: #B43E8F;
   margin: 0;
   padding: 0;
   margin-top: 10px;
@@ -14,7 +14,7 @@
 
 .video-container video {
   @apply w-full h-full borderPulse;
-  background-color: #9BB1FF;
+  background-color: #3B0086;
 }
 
 .h-700 {
@@ -32,10 +32,10 @@
 
 @keyframes borderPulse {
   0% {
-    border: 1px solid #788BFF;
+    border: 1px solid #290628;
   }
   100% {
-    border: 10px solid #E2FDFF;
+    border: 10px solid #EA7AF4;
   }
 }
 

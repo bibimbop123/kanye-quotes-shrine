@@ -29,9 +29,9 @@ function App() {
       <div className="text-center">
         <h2 className="text-2xl font-bold mt-8">...and I quote:</h2>
         <h3 className="text-xl font-bold">👇</h3>
-        <p className="quote">{quote}</p>
+        <p className="text-4xl font-bold quote">{quote}</p>
         <button
-          className="bg-secondary text-primary px-4 py-2 rounded mt-4"
+          className="bg-secondary text-primary px-4 py-2 rounded mt-4 bg-red-500"
           onClick={fetchQuote}
         >
           Get new quote
